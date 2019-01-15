@@ -17,13 +17,12 @@
             <td> <input type="button" name="condition"></td>
         </tr>
 </table>
+</body>
 <script src="../js/jquery-3.3.1.min.js"></script>
 <script>
     $("[name='condition']").click(function () {
         console.log("====");
-         window.location = "/login?user="+$("#login").val()+"&pass="+$("#pass").val();
+        window.location = "/login?user="+$("#login").val()+"&pass="+$("#pass").val();
     })
 </script>
-
-</body>
 </html>
