@@ -2,11 +2,8 @@
 <!DOCTYPE mapper
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.bwie.demo0109.mapper.StudentMapper">
-	<select id="queryStudent" resultType="Student">
-        select * from t_student where name like concat('%',#{condition},'%')
-    </select>
-	<select id="select" resultType="Account">
+<mapper namespace="com.mapper.AccountMapper">
+	<select id="select" resultType="com.entity.Account">
         select * from account where user=#{user} and password=#{pass}
     </select>
 </mapper>

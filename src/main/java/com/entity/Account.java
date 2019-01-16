@@ -6,7 +6,7 @@
  * Description:
  * @Date: 2019/1/9-11:18    1.0
  */
-package com.bwie.demo0109.entity;
+package com.entity;
 
 import lombok.Data;
 
