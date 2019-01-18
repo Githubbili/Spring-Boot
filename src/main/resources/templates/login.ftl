@@ -52,7 +52,7 @@
                       if(df==2){
                           window.location ="/loginController/list.do"
                       }else{
-                          window.location ="/loginController/login.do"
+                          window.location ="/"
                       }
                     }
                 });

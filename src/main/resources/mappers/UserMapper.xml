@@ -6,4 +6,19 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="select" resultType="com.entity.Account">
         select * from account where user=#{user} and password=#{pass}
     </select>
+    <update id="update" parameterType="com.entity.Account" >
+        update account set password=#{password} where user=#{user}
+    </update>
+    <select id="getUser" resultType="com.entity.Account">
+        select * from account WHERE user=#{user}
+    </select>
+    <select id="query" resultType="com.entity.Account">
+        select * from account
+    </select>
+    <insert id="insert" >
+        insert into account (user ,password) values (#{user},#{password})
+    </insert>
+    <delete id="delete" parameterType="int">
+        delete from account WHERE id=#{id}
+    </delete>
 </mapper>
